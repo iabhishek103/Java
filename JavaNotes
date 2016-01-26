@@ -1,0 +1,15 @@
+Java - Java is a programming language and a platform.    Platform because it provides RUNTIME ENVIORNMENT and API. Language because it provides syntax.
+Data type - a)Primitive 8 - byte,short,int,long float,double char(default-value-\u0000) boolean b) Non primitive - Array,String
+Unicode system (UTF - 8)(4 bytes per characters) all language - java  ;   ASCII - only englist - 128 characters
+Common Java Programs - Fibonnaci, Prime number, Palindrome, Factorial , Armstrong
+
+Socket : ServerSocket and ClientSocket
+Create object of ServerSocket and accept it to get the socket. readUTF the data from socket's DataInputStream  *UTF means Unicode
+Client does NOT have to create any object of itself. Just create a socket with IP address and port number of server. Get DataOutputStream of socket and writeUTF and flush to it
+URL class : protocol, host address , port, file name
+URLConnection class : to get Data from specific Url
+HttpUrlConnection : to get header information
+InetAddress : to get host ip address and host name
+
+Design Pattern  : Creational : Structural : Behavioral
+Factory Pattern  : Creational
