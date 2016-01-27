@@ -25,3 +25,19 @@ Only one thread can run in a process at a time. Thread Scheduler : Priority base
 sleep method 
 If we directly call run() instead of start(), no new call stack will be created. It will not behave like a different thread.
 Join method : stops every other thread until the thread on which join is called is finished.
+setName()
+Priority : Max : 10 ; Default : 5 ; Min :1
+Daemon thread : worker thread for user thread : set a thread user thread by calling setDaemon(true) on it
+Thread Pool
+Thread Group : Used to terminate or interrupt a group of thread in one call. ThreadGroup can be specified in the constructor of thread.
+Shutdown hook : used to do a task during shutdown or ctrl+c. Called by Runtime.getRuntime().addShutdownHook(new thread())
+Garbage collector : manually call by : System.gc() : called on a) unreference object e.g. new Thread() b) by nulling a reference c) by assigning to other
+Java Runtime class is used to interact with java runtime environment. Java Runtime class provides methods to execute a process, invoke GC, get total and free memory etc. e.g Runtime.getRuntime().exec("notepad")
+
+Synchronization :
+Method Synchronization : by putting synchronized keyword before any method
+Block Synchronization : by putting the block inside synchronized(this) keyword or using synchronized(variable name)
+Deadlock
+intercommunication between thread : wait(), notify(), notifyAll()
+Interrupt thread : to wake a thread from sleep e.g. t1.interrupt()
+
