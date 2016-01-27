@@ -19,4 +19,9 @@ Singleton : Creational
 Collections :
 ArrayList and LinkedList : Arraylist is used when to access data while LinkedList when to add or remove data. Because in linked list its easier to remove or add while in array its easier to traverse.
 
-Multithreading :
+Multithreading : 5 states : New, Runnable, Running , Non-Runnable, Terminated
+Two ways of implementing by : extending Thread or implementing Runnable interface.
+Only one thread can run in a process at a time. Thread Scheduler : Priority based(Preemtive) or Time Slicing
+sleep method 
+If we directly call run() instead of start(), no new call stack will be created. It will not behave like a different thread.
+Join method : stops every other thread until the thread on which join is called is finished.
