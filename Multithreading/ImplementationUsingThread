@@ -1,0 +1,8 @@
+public class ImplementationUsingThread extends Thread {
+    public void run() {
+        System.out.print("A new thread created...");
+    }
+    public static void main(String args[]) {
+        new ImplementationUsingThread().start();
+    }
+}
