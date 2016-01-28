@@ -1,0 +1,46 @@
+package Swing;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+/**
+ * Created by Abhishek Jaiswal on 28-01-2016.
+ * Radio Button with event handling
+ */
+public class RadioButtonWithEventHandling extends JFrame implements ActionListener{
+    JRadioButton radioButtonMale;
+    JRadioButton radioButtonFemale;
+    JButton buttonOk;
+    public static void main(String args[]) {
+        new RadioButtonWithEventHandling().initializeFrame();
+    }
+
+    private void initializeFrame(){
+        radioButtonMale = new JRadioButton("Male");
+        radioButtonMale.setBounds(100,100,80,80);
+        radioButtonFemale = new JRadioButton("Female");
+        radioButtonFemale.setBounds(100,200,80,80);
+        ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(radioButtonMale);
+        buttonGroup.add(radioButtonFemale);
+        buttonOk = new JButton("Click");
+        buttonOk.setBounds(105,300,80,80);
+        buttonOk.addActionListener(this);
+        add(radioButtonMale);
+        add(radioButtonFemale);
+        add(buttonOk);
+        setSize(800,880);
+        setLayout(null);
+        setVisible(true);
+
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(radioButtonMale.isSelected()){
+            JOptionPane.showMessageDialog(this,"You are Male");
+        } else if(radioButtonFemale.isSelected()){
+            JOptionPane.showMessageDialog(this, "You are female");
+        }
+    }
+}
