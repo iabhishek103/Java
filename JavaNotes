@@ -41,3 +41,19 @@ Deadlock
 intercommunication between thread : wait(), notify(), notifyAll()
 Interrupt thread : to wake a thread from sleep e.g. t1.interrupt()
 
+Swing :
+The Java Foundation Classes (JFC) are a set of GUI components which simplify the development of desktop applications.
+There are two ways to create a frame: a)By creating the object of Frame class (association) b) By extending Frame class (inheritance)
+Button : JButton(), JButton(String s), JButton(icon i)
+RadioButton : JRadioButton(), JRadioButton(String s), JRadioButton(String s, boolean selected)
+ButtonGroup : ButtonGroup()
+JTextArea
+JCombobBox : Dropdown list
+JTable
+JColorChooser
+JProgressBar
+JSlider
+Graphics : extend Canvas : inside paint function : drawRect(), drawLine() etc.
+Image : extend Canvas
+Menu : JMenuBar, JMenuFile, JMenuItem
+JFileChooser
