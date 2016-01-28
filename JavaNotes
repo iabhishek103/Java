@@ -15,6 +15,7 @@ Design Pattern  : Creational : Structural : Behavioral
 Factory Pattern  : Creational
 Builder : Creational
 Singleton : Creational
+Adapter : Builder
 
 Collections :
 ArrayList and LinkedList : Arraylist is used when to access data while LinkedList when to add or remove data. Because in linked list its easier to remove or add while in array its easier to traverse.
