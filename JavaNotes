@@ -57,3 +57,8 @@ Graphics : extend Canvas : inside paint function : drawRect(), drawLine() etc.
 Image : extend Canvas
 Menu : JMenuBar, JMenuFile, JMenuItem
 JFileChooser
+BorderLayout : North, South, East, West, Centre
+GridLayout
+FlowLayout
+Box Layout
+Card Layout
